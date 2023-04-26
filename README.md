@@ -6,7 +6,9 @@
 </p>
 
 <div align="center">
+
 ![DEMO1](https://github.com/SkorEgor/picturesgifs-for-readme/blob/RobotControl/high_pass_filter_with_Fourier/1.jpg)
+
 </div>
 
 
@@ -14,13 +16,17 @@
 1)	Необходимо задать параметры исходного полигармонического сигнала. Исходный сигнал получается суммой гармоник.
 
  <div align="center">
+
 ![DEMO1](https://github.com/SkorEgor/picturesgifs-for-readme/blob/RobotControl/high_pass_filter_with_Fourier/2_signal_parameters.jpg)
+
 </div>
 
 2)	 Частота дискретизации и кол-во точек (должно быть равно 2 в степни) графика задаётся в специальном поле.
 
 <div align="center">
+
 ![DEMO1](https://github.com/SkorEgor/picturesgifs-for-readme/blob/RobotControl/high_pass_filter_with_Fourier/3_signal_parameters.jpg)
+
 </div>
 
 3)	 Теперь специально зашумим сигнал, через процент шума (отношение энергий шума к сигналу). Дальше можно нажать отрисовать.
@@ -28,19 +34,25 @@
 4)	 На первом графике красной линией отрисован сигнал с Гауссовым шумом, на втором спектральная плотность мощности этого сигнала, полученная прямым преобразованием Фурье (быстрым Фурье преобразованием).
 
 <div align="center">
+
 ![DEMO1](https://github.com/SkorEgor/picturesgifs-for-readme/blob/RobotControl/high_pass_filter_with_Fourier/4_signal_and_spectrum.jpg)
+
 </div>
 
 5)	 Для фильтрации необходимо указать процент энергии спектра, который нужно сохранить. Дальше начиная с левой границы производим подсчет энергии, при достижении заданного значения, зануляем отсчеты (реальную и мнимую) не попавшие в диапазон.
 
 <div align="center">
+
 ![DEMO1](https://github.com/SkorEgor/picturesgifs-for-readme/blob/RobotControl/high_pass_filter_with_Fourier/5_spectrum_filtering.jpg)
+
 </div>
 
 6)	От полученного спектра берем обратное Фурье преобразование, в результате имеем отфильтрованный сигнал. Дополнительно посчитана характеристика рассогласования, между результатом и исходным сигналом мез шума.
 
 <div align="center">
+
 ![DEMO1](https://github.com/SkorEgor/picturesgifs-for-readme/blob/RobotControl/high_pass_filter_with_Fourier/6_result.jpg)
+
 </div>
 
 ##Замечание
